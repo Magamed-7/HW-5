@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0;
+    font-family: "Nunito Sans", sans-serif;
+}
+
+/* First part */
+
+.first {
+    background-image: url(./Rectangle\ 1.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+    /* Header */
+.header {
+    display: flex;
+    padding: 30px 0;
+    align-items: center;
+    justify-content: center;
+}
+.header p {
+    display: none;
+}
+.head-mid {
+    font-size: 20px;
+    display: flex;
+    gap: 30px;
+    margin-left: 150px;
+    margin-right: 30px;
+}
+.head-mid a {
+    text-decoration: none;
+    color: aliceblue;
+}
+.head-mid a:active {
+    color: gray;
+}
+.head-end {
+    border: none;
+    background-color: #1A3E3E;
+    border-radius: 4px;
+    padding: 8px 16px;
+    color: aliceblue;
+    font-size: 18px;
+}
+.head-end:hover {
+    background-color: green;
+    cursor: pointer;
+}
+
+    /* The bottom part */
+
+.first-bottom {
+    margin-top: auto;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+.first-bottom h1 {
+    width: 80%;
+    font-size: 60px;
+    color: aliceblue;
+    margin-bottom: 25px;
+}
+.first-date {
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    height: 15vh;
+    padding: 20px;
+    border-radius: 8px;
+}
+.input1 select, .input1 input, .input1 button {
+    padding: 16px 24px;
+    background-color: transparent;
+    border: 1px solid aliceblue;
+    border-radius: 8px;
+    color: aliceblue;
+}
+.input1 p {
+    font-size: 16px;
+    color: #FDFDFD;
+}
+.mob-but {
+    display: none;
+}
+.field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid aliceblue;
+    border-radius: 8px;
+    padding: 16px 24px;
+}
+.field input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+.field input::placeholder, .input1 input::placeholder {
+    color: aliceblue;
+    font-size: 15px;
+}
+.field input:focus {
+    background: none;
+    color: aliceblue;
+}
+.fields {
+    font-size: 12px;
+    color: #FDFDFD;
+}
+.input1 button {
+    background-color: aliceblue;
+    color: black;
+}
+.input1 button:hover {
+    background-color: black;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.block {
+    display: none;
+}
+
+@media (max-width: 510px) {
+    .hidden {
+        display: none;
+    }
+    .block {
+        display: block;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 15px;
+    }
+    .header p {
+        font-size: 44px;
+        color: aliceblue;
+        display: block;
+    }
+    .first-bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .first-bottom h1 {
+        width: 90%;
+        font-size: 43px;
+    }
+    .mob-but {
+        padding: 14px 24px;
+        font-size: 22px;
+        border-radius: 8px;
+        border: none;
+    }
+}
